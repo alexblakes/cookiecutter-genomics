@@ -4,5 +4,6 @@
   "author_name": "Alex Blakes",
   "email": "alex.blakes@gmail.com",
   "project_short_description": "A short description of the project.",
-  "first_version": "0.1.0"
+  "package_version": "0.1.0",
+  "python_version": "3.14"
 }

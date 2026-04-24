@@ -4,7 +4,7 @@ requires = ["setuptools"]
 
 [project]
 name = "{{ cookiecutter.package_name }}"
-version = "{{ cookiecutter.first_version }}"
+version = "{{ cookiecutter.package_version }}"
 description = "{{ cookiecutter.project_short_description | replace('\\', '\\\\') | replace('\"', '\\\"') }}"
 readme = "README.md"
 authors = [
