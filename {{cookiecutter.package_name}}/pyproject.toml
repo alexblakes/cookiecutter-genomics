@@ -8,7 +8,7 @@ version = "{{ cookiecutter.package_version }}"
 description = "{{ cookiecutter.project_short_description | replace('\\', '\\\\') | replace('\"', '\\\"') }}"
 readme = "README.md"
 authors = [
-  {name = "{{ cookiecutter.author_name | replace('\\', '\\\\') | replace('\"', '\\\"') }}", email = "{{cookiecutter.email}}"}
+  {name = "{{ cookiecutter.author_name | replace('\\', '\\\\') | replace('\"', '\\\"') }}"}
 ]
 license = {text = "MIT"}
 
