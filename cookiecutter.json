@@ -1,6 +1,6 @@
 {
   "project_name": "Project name",
-  "module_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+  "package_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
   "author_name": "Alex Blakes",
   "email": "alex.blakes@gmail.com",
   "project_short_description": "A short description of the project.",
