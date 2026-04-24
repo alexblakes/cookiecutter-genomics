@@ -1,0 +1,15 @@
+{
+    "workbench.sideBar.location": "right",
+    "git.enabled": true,
+    "git.confirmSync": false,
+    "jupyter.askForKernelRestart": false,
+    "jupyter.notebookFileRoot": "${workspaceFolder}",
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+    "[snakemake]": {
+        "editor.defaultFormatter": "tfehlmann.snakefmt"
+    },
+    "python-envs.defaultEnvManager": "renan-r-santos.pixi-code:pixi",
+    "python-envs.defaultPackageManager": "renan-r-santos.pixi-code:pixi",
+}

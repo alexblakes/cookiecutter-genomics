@@ -1,0 +1,58 @@
+# {{ cookiecutter.project_name }}
+
+![PyPI version](https://img.shields.io/pypi/v/{{ cookiecutter.package_name }}.svg)
+
+{{ cookiecutter.project_short_description }}
+
+* [GitHub](https://github.com/{{ cookiecutter.github_repo_owner }}/{{ cookiecutter.package_name }}/) | [PyPI](https://pypi.org/project/{{ cookiecutter.package_name }}/) | [Documentation](https://{{ cookiecutter.github_repo_owner }}.github.io/{{ cookiecutter.package_name }}/)
+* Created by [{{ cookiecutter.full_name }}]({{ cookiecutter.author_website if cookiecutter.author_website else 'https://github.com/' + cookiecutter.github_username }}) | {% if cookiecutter.author_website %}GitHub [@{{ cookiecutter.github_username }}](https://github.com/{{ cookiecutter.github_username }}) | {% endif %}PyPI [@{{ cookiecutter.pypi_username }}](https://pypi.org/user/{{ cookiecutter.pypi_username }}/)
+* MIT License
+
+## Features
+
+* TODO
+
+## Documentation
+
+Documentation is built with [Zensical](https://zensical.org/) and deployed to GitHub Pages.
+
+* **Live site:** https://{{ cookiecutter.github_repo_owner }}.github.io/{{ cookiecutter.package_name }}/
+* **Preview locally:** `just docs-serve` (serves at http://localhost:8000)
+* **Build:** `just docs-build`
+
+API documentation is auto-generated from docstrings using [mkdocstrings](https://mkdocstrings.github.io/).
+
+Docs deploy automatically on push to `main` via GitHub Actions. To enable this, go to your repo's Settings > Pages and set the source to **GitHub Actions**.
+
+## Development
+
+To set up for local development:
+
+```bash
+# Clone your fork
+git clone git@github.com:your_username/{{ cookiecutter.package_name }}.git
+cd {{ cookiecutter.package_name }}
+
+# Install in editable mode with live updates
+uv tool install --editable .
+```
+
+This installs the CLI globally but with live updates - any changes you make to the source code are immediately available when you run `{{ cookiecutter.import_name }}`.
+
+Run tests:
+
+```bash
+uv run pytest
+```
+
+Run quality checks (format, lint, type check, test):
+
+```bash
+just qa
+```
+
+## Author
+
+{{ cookiecutter.project_name }} was created in {% now 'local', '%Y' %} by {{ cookiecutter.full_name }}.
+
+Built with [Cookiecutter](https://github.com/cookiecutter/cookiecutter) and the [audreyfeldroy/cookiecutter-pypackage](https://github.com/audreyfeldroy/cookiecutter-pypackage) project template.

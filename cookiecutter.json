@@ -1,0 +1,10 @@
+{
+  "full_name": "Alex Blakes",
+  "email": "alex.blakes@well.ox.ac.uk",
+  "github_username": "ablakes",
+  "project_name": "Genomic data science",
+  "package_name": "{{ cookiecutter.project_name.replace(' ', '-') }}",
+  "import_name": "{{ cookiecutter.package_name.lower().replace('-', '_') }}",
+  "project_short_description": "Template for genomic data science projects.",
+  "first_version": "0.1.0"
+}
