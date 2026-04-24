@@ -1,10 +1,8 @@
 {
-  "full_name": "Alex Blakes",
-  "email": "alex.blakes@well.ox.ac.uk",
-  "github_username": "alexblakes",
   "project_name": "Project name",
-  "package_name": "{{ cookiecutter.project_name.replace(' ', '-') }}",
-  "import_name": "{{ cookiecutter.package_name.lower().replace('-', '_') }}",
+  "module_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+  "author_name": "Alex Blakes",
+  "email": "alex.blakes@gmail.com",
   "project_short_description": "A short description of the project.",
   "first_version": "0.1.0"
 }
