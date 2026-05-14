@@ -2,7 +2,7 @@ configfile: "smk_config.yaml"
 
 module placeholder:
     snakefile:
-        "path/to/placeholder.smk"
+        "scripts/placeholder/Snakefile"
 
 
 use rule * from placeholder as placeholder_*
