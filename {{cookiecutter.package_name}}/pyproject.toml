@@ -28,7 +28,7 @@ statsmodels = ">=0.14.6,<0.15"
 ipykernel = ">=7.2.0,<8"
 pip = ">=26.0.1,<27"
 ruff = ">=0.15.9,<0.16"
-snakemake-minimal = "9.16.*" # Breaking change in 9.17; reversed in 9.18
+snakemake-minimal = ">=9.18" # Breaking change in 9.17; reversed in 9.18
 snakefmt = ">=1.0.0,<2"
 bcftools = ">=1.23.1,<2"
 bedtools = ">=2.31.1,<3"
