@@ -1,4 +1,4 @@
-configfile: "smk_config.yaml"
+configfile: "config.yaml"
 
 module placeholder:
     snakefile:
