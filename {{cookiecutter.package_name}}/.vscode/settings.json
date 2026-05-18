@@ -5,6 +5,10 @@
     "git.confirmSync": false,
     "jupyter.askForKernelRestart": false,
     "jupyter.notebookFileRoot": "${workspaceFolder}",
+    "jupyter.runStartupCommands": [
+        "%load_ext autoreload",
+        "%autoreload 2"
+    ],
     "[python]": {
         "editor.defaultFormatter": "charliermarsh.ruff"
     },
@@ -13,5 +17,8 @@
     },
     "python-envs.defaultEnvManager": "renan-r-santos.pixi-code:pixi",
     "python-envs.defaultPackageManager": "renan-r-santos.pixi-code:pixi",
-    "errorLens.enabledDiagnosticLevels": ["error","warning"],
+    "errorLens.enabledDiagnosticLevels": [
+        "error",
+        "warning"
+    ],
 }

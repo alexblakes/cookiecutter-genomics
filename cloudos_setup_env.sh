@@ -19,17 +19,21 @@ export PIXI_HOME
 PATH="${PIXI_HOME}/bin:${PATH}"
 export PATH
 
-# Update .bashrc with PIXI_HOME and PATH
-printf '\nPIXI_HOME="${HOME}/.pixi" \n' >> "${HOME}/.bashrc"
-printf 'export PIXI_HOME \n' >> "${HOME}/.bashrc"
-printf 'PATH="${PIXI_HOME}/bin:${PATH}" \n' >> "${HOME}/.bashrc"
-printf 'export PATH \n' >> "${HOME}/.bashrc"
+# Set git initial config
+git config --global user.name "Alex"
+git config --global user.email "alex.blakes@gmail.com"
 
 # Install Oh My Zsh: 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+# Update .zshrc with PIXI_HOME and PATH
+printf '\nPIXI_HOME="${HOME}/.pixi" \n' >> "${HOME}/.zshrc"
+printf 'export PIXI_HOME \n' >> "${HOME}/.zshrc"
+printf 'PATH="${PIXI_HOME}/bin:${PATH}" \n' >> "${HOME}/.zshrc"
+printf 'export PATH \n' >> "${HOME}/.zshrc"
+
 ## Change shell to zsh
-printf '[ -f "/usr/bin/zsh" ] && exec "/usr/bin/zsh" -l \n' >> "${HOME}/.bashrc"
+printf '[ -f "/usr/bin/zsh" ] && exec "/usr/bin/zsh" -l \n' >> "${HOME}/.zshrc"
 
 # Add starship config to ~/.zshrc
 printf '\n# Starship\n' >> "${HOME}/.zshrc"

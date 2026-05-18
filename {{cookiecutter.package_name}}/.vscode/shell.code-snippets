@@ -47,7 +47,7 @@
 			"tmpdir=\\$(mktemp -d)",
 			"trap 'rm -rf \"\\$tmpdir\"' EXIT",
 			"",
-			"sleep 1"
+			"wait"
 		],
 	}
 }
