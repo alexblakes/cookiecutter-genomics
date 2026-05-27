@@ -6,7 +6,13 @@
     "body": [
       "from ab_utils.smk import log_path",
       "",
-      "configfile: \"${1:config.yaml}\""
+      "configfile: \"${1:config.yaml}\"",
+      "",
+      "",
+      "rule all:",
+      "    default_target: True",
+      "    input:",
+      "        \"\","
     ]
   },
   "Rule stub (script)": {
