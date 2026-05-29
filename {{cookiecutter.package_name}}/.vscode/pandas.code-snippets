@@ -42,7 +42,7 @@
       "import numpy as np",
       "import pandas as pd",
       "",
-      "snakemake = ab.inject_snakemake(${2:Rule name})",
+      "snakemake = ab.inject_snakemake(\"${2:Rule name}\")",
       "",
       "",
       "def main() -> pd.DataFrame:",
