@@ -43,6 +43,6 @@ ab_utils = { git = "https://github.com/alexblakes/ab_utils.git", branch='main'}
 [tool.pixi.tasks]
 ruff_lint = "ruff check --fix"
 ruff_format = "ruff format"
-smk_format = "snakefmt Snakefile workflow/"
+smk_format = "snakefmt Snakefile scripts/"
 fmt = { depends-on = ["ruff_lint", "ruff_format", "smk_format"] }
 smk = "snakemake --cores 4"
