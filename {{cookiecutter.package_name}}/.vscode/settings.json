@@ -18,6 +18,7 @@
     },
     "python-envs.defaultEnvManager": "renan-r-santos.pixi-code:pixi",
     "python-envs.defaultPackageManager": "renan-r-santos.pixi-code:pixi",
+    "python.terminal.activateEnvironment": false, // Avoids auto-activation of Pixi envs, which interferes with the Python debugger in VS Code
     "errorLens.enabledDiagnosticLevels": [
         "error",
         "warning"
