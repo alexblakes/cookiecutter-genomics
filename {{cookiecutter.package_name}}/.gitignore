@@ -2,6 +2,7 @@
 data/
 log/
 .snakemake/
+.claude/
 .gitattributes
 .DS_Store
 
