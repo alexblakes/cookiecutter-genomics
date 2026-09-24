@@ -52,3 +52,4 @@ ruff_format = "ruff format"
 smk_format = "snakefmt Snakefile scripts/"
 fmt = { depends-on = ["ruff_lint", "ruff_format", "smk_format"] }
 smk = "snakemake --cores 4"
+latest = "git pull; pixi run smk"
