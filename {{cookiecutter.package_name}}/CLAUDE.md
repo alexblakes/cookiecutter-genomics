@@ -14,6 +14,9 @@
   - Target functions < 30 lines.
 - Favour a functional coding style.
 
+## Snakemake coding style
+- Hard-code dependencies in rules, rather than using the .output accessor
+
 ## Pandas coding style
 - When writing Pandas code you must always use method chains
 - Favour `ab_utils.read()` over `pd.read_csv()`. It reads TSV by default and logs the row count.
