@@ -15,10 +15,10 @@
 - Favour a functional coding style.
 
 ## Snakemake coding style
-- Hard-code dependencies in rules, rather than using the .output accessor
+- Hard-code `input:` and `output:` dependencies in rules. Don't use .output accessors.
 
 ## Pandas coding style
-- When writing Pandas code you must always use method chains
+- You must always use method chains in pandas code.
 - Favour `ab_utils.read()` over `pd.read_csv()`. It reads TSV by default and logs the row count.
 - Always use the `validate` argument with merges.
 
