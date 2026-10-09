@@ -6,6 +6,7 @@
 
 ## Coding style
 - Use the stubs in `.vscode/*.code-snippets` as the starting point for any Python, Snakemake, or bash script.
+- For plotting scripts, use the `Plotting boilerplate` under `.vscode/pandas.code-snippets`
 - Write code with an emphasis on simplicity and readability.
 - Code should be accessible to review by a junior analyst
 - Avoiding deep nesting or obscure "tricks".
@@ -15,7 +16,7 @@
 - Favour a functional coding style.
 
 ## Snakemake coding style
-- Hard-code `input:` and `output:` dependencies in rules. Don't use .output accessors.
+- Hard-code filepaths in rules. Don't use `rule` or `params` accessors for filepaths.
 
 ## Pandas coding style
 - You must always use method chains in pandas code.
