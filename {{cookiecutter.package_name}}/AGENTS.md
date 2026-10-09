@@ -36,7 +36,8 @@
   - msg="Rows after dropping duplicates: "
   - msg="Duplicates after merging <left_dataframe> and <right_dataframe> on <merge_columns>: "
 
-## Matplotlib coding style
+## Plotting coding style
+- Prefer `matplotlib` to `seaborn`
 - Prefer `axes.annotate()` over `axes.text()`
 - Always express figure sizes in centimetres (divide inches by 2.54)
 - Use separate scripts for data manipulation and plotting.
