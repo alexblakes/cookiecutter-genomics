@@ -25,12 +25,16 @@
 
 ## Pandas checks and assertions
 - You must use the pandas_checks library extensively.
-- You must use the `.check` accessor frequently, for example:
-  - To check the shape of the data after loading, or after any transformation, filter, or merge
-  - To check for unique values in relevant subsets of the data after any transformation, filter, or merge
-  - To check for duplicates in newly loaded or merged data
+- You must use the `.check` accessor to check, for example:
+  - the shape of the data after reading, or after any transformation, filter, or merge
+  - for unique values in relevant subsets of the data after any transformation, filter, or merge
+  - for duplicates in newly loaded or merged data
 - You must use the `.check.assert_*` methods to sanity-check pandas objects after loading data, or after any transformation
   - For example, use `.check.assert_data(lambda df: <condition>, fail_message="...")` for custom boolean assertions.
+- In every `.check` and `.check.assert_*`, provide a short message describing the preceeding transformation. For example:
+  - msg="Shape of input from <file_name>: "
+  - msg="Rows after dropping duplicates: "
+  - msg="Duplicates after merging <left_dataframe> and <right_dataframe> on <merge_columns>: "
 
 ## Matplotlib coding style
 - Prefer `axes.annotate()` over `axes.text()`
