@@ -47,7 +47,10 @@
       "    threads: 1  # Corresponds to LSF -n",
       "    resources:",
       "        mem_mb=lambda wildcards, attempt: 1000 + (attempt * 1000),",
-      "        lsf_extra=\"-o log/${1:rule_name}/%J.%I.out -e log/${1:rule_name}/%J.%I.err\",",
+      "        lsf_extra=(",
+      "            \"-o log/${1:rule_name}/%J.%I.out \"",
+      "            \"-e log/${1:rule_name}/%J.%I.err\"",
+      "        ),",
       "    shell:",
       "        \"echo 'test'\""
     ]
