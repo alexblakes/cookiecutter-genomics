@@ -16,7 +16,8 @@
 - Favour a functional coding style.
 
 ## Snakemake coding style
-- Hard-code filepaths in rules. Don't use `rule` or `params` accessors for filepaths.
+- Hard-code filepaths in rules. Don't use `rule` or `params` accessors for filepaths
+- Specify `configfile:` in every Snakefile and .smk file
 
 ## Pandas coding style
 - You must always use method chains in pandas code.
