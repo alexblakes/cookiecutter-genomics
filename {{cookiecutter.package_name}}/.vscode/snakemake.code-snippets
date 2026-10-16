@@ -31,4 +31,25 @@
       "        \"${1:rule_name}.py\"$0"
     ]
   },
+  "LSF boilerplate": {
+    "scope": "snakemake",
+    "prefix": ["lsf"],
+    "description": "Boilerplate Snakemake LSF rule",
+    "body": [
+      "rule ${1:rule_name}:",
+      "    input:",
+      "        \"${2:input_file}\",",
+      "    output:",
+      "        \"${3:output_file}\",",
+      "    log:",
+      "        log_path(\"${1:rule_name}\", workflow.snakefile),",
+      "    retries: 3",
+      "    threads: 1  # Corresponds to LSF -n",
+      "    resources:",
+      "        mem_mb=lambda wildcards, attempt: 1000 + (attempt * 1000),",
+      "        lsf_extra=\"-o log/${1:rule_name}/%J.%I.out -e log/${1:rule_name}/%J.%I.err\",",
+      "    shell:",
+      "        \"echo 'test'\""
+    ]
+  },
 }

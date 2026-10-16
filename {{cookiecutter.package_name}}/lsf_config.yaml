@@ -1,0 +1,18 @@
+# Default LSF config for Genomics England Research Environment.
+# Set SNAKEMAKE_LSF_MEMFMT=perjob in ~/.bashrc
+executor: lsf
+
+jobs: 100 # Caps the number of jobs run at once
+local-cores: 8 # Caps the number of cores available locally
+max-threads: 32 # Caps the number of threads a single job can request
+latency-wait: 20 # Time between job completion and output readiness
+seconds-between-status-checks: 20
+max-jobs-per-second: 20 # Submission
+
+default-resources:
+  lsf_project: "re_gecip_enhanced_interpretation"
+  lsf_queue: "short"
+  runtime: "240"
+  disk: "20G"
+  mem_mb: 1000 # Total job memory. Set SNAKEMAKE_LSF_MEMFMT=perjob in ~/.bashrc
+  lsf_extra: "-n 1 -M 1000M" # Keep this limit equal to mem when overriding memory.

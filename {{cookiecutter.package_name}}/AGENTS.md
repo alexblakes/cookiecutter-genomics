@@ -6,7 +6,6 @@
 
 ## Coding style
 - Use the stubs in `.vscode/*.code-snippets` as the starting point for any Python, Snakemake, or bash script.
-- For plotting scripts, use the `Plotting boilerplate` under `.vscode/pandas.code-snippets`
 - Write code with an emphasis on simplicity and readability.
 - Code should be accessible to review by a junior analyst
 - Avoiding deep nesting or obscure "tricks".
@@ -18,6 +17,8 @@
 ## Snakemake coding style
 - Hard-code filepaths in rules. Don't use `rule` or `params` accessors for filepaths
 - Specify `configfile:` in every Snakefile and .smk file
+- Specify `localrule: True` for all rules, except those explicitly directed to LSF
+- Use the LSF boilerplate snippet for LSF rules
 
 ## Pandas coding style
 - You must always use method chains in pandas code.
@@ -38,6 +39,7 @@
   - msg="Duplicates after merging <left_dataframe> and <right_dataframe> on <merge_columns>: "
 
 ## Plotting coding style
+- For matplotlib scripts, use the `Plotting boilerplate` under `.vscode/pandas.code-snippets`
 - Prefer `matplotlib` to `seaborn`
 - Prefer `axes.annotate()` over `axes.text()`
 - Always express figure sizes in centimetres (divide inches by 2.54)
